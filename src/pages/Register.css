@@ -1,0 +1,59 @@
+.login-card-flip {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+/* LEFT */
+.flip-left {
+  background: #dc3545;
+  padding: 40px;
+}
+
+.aswhub-logo {
+  width: 140px;
+}
+
+/* RIGHT */
+.flip-right {
+  background: #ffffff;
+}
+
+/* INPUT */
+.form-control {
+  border-radius: 2px;
+  padding: 10px;
+}
+
+/* BUTTON */
+.danger-btn {
+  background: #dc3545;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.danger-btn:hover {
+  background: #bb2d3b;
+}
+
+/* LINK */
+.danger-link {
+  color: #dc3545;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.danger-link:hover {
+  text-decoration: underline;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .flip-left {
+    display: none;
+  }
+}

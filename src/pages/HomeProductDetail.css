@@ -1,0 +1,128 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ================= CARD ================= */
+.more-contents {
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.more-contents:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= IMAGE ================= */
+.more-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-img {
+  height: 130px;
+  object-fit: contain;
+}
+
+/* ================= TEXT ================= */
+.product-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-price {
+  font-size: 15px;
+}
+
+.product-offer {
+  font-size: 14px;
+}
+
+/* ================= BUTTON GROUP ================= */
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.details-link {
+  display: contents;
+}
+
+.action-btn {
+  padding: 10px 20px;
+  font-weight: 500;
+  min-height: 45px;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 576px) {
+  .more-contents {
+    padding: 18px;
+  }
+
+  .more-img {
+    height: 95px;
+  }
+
+  .product-title {
+    font-size: 15px;
+  }
+
+  .product-price,
+  .product-offer {
+    font-size: 13px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+    font-size: 13px;
+  }
+}
+
+/* ================= TABLET ================= */
+@media (min-width: 577px) and (max-width: 991px) {
+  .more-img {
+    height: 110px;
+  }
+
+  .product-title {
+    font-size: 16px;
+  }
+
+  .action-btn {
+    flex: 1 1 48%;
+    font-size: 14px;
+  }
+}
+
+/* ================= DESKTOP ================= */
+@media (min-width: 992px) {
+  .product-title {
+    font-size: 18px;
+  }
+
+  .product-price {
+    font-size: 15px;
+  }
+
+  .action-btn {
+    
+    font-size: 10px;
+  }
+}

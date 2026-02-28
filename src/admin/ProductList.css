@@ -1,0 +1,76 @@
+.fk-list-container {
+  min-height: 100vh;
+  background: #f1f3f6;
+  padding: 25px;
+}
+
+.fk-heading {
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #212121;
+}
+
+.fk-empty {
+  background: #fff;
+  padding: 50px;
+  text-align: center;
+  border-radius: 8px;
+  color: #777;
+}
+
+
+.fk-row-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+}
+
+.fk-row-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.fk-row-img {
+  width: 100%;
+  max-height: 120px;
+  object-fit: contain;
+}
+
+
+.fk-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 6px;
+}
+
+
+.fk-desc {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+
+.fk-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #212121;
+}
+
+
+@media (max-width: 768px) {
+  .fk-row-card {
+    padding: 15px;
+  }
+
+  .fk-title {
+    font-size: 14px;
+  }
+
+  .fk-desc {
+    font-size: 12px;
+  }
+}

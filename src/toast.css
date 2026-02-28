@@ -1,0 +1,50 @@
+/* =========================
+   FLIPKART STYLE TOAST
+========================= */
+
+.flipkart-toast {
+  background: #ffffff;
+  color: #212121;
+  border-left: 4px solid #dc3545; /* danger red */
+  min-height: 55px;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  padding: 12px 14px;
+}
+
+.flipkart-toast-body {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+
+/* SUCCESS */
+.Toastify__toast--success {
+  border-left-color: #28a745;
+}
+
+/* ERROR */
+.Toastify__toast--error {
+  border-left-color: #dc3545;
+}
+
+/* WARNING */
+.Toastify__toast--warning {
+  border-left-color: #ffc107;
+}
+
+/* ICON */
+.Toastify__toast-icon {
+  margin-right: 10px;
+}
+
+/* CLOSE BUTTON */
+.Toastify__close-button {
+  color: #555;
+  opacity: 0.6;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1;
+}

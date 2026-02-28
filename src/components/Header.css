@@ -1,0 +1,155 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ===================== HEADER ===================== */
+.flipkart-header {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* LOGO */
+.logo-image {
+  width: 150px;
+}
+
+/* SEARCH */
+.search-form {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+}
+
+.flipkart-search {
+  padding: 8px 40px 8px 14px;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.flipkart-search:focus {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.1rem rgba(220,53,69,0.25);
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #dc3545;
+  font-size: 18px;
+}
+
+/* NAV LINKS */
+.flip-nav-link {
+  color: #212121 !important;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.flip-nav-link:hover {
+  color: #dc3545 !important;
+}
+
+/* LOGIN BUTTON */
+.flip-login-btn {
+  background-color: #dc3545;
+  color: #fff !important;
+  padding: 6px 18px;
+  border-radius: 2px;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.flip-login-btn:hover {
+  background-color: #bb2d3b;
+}
+
+/* CART */
+.bag-nav {
+  position: relative;
+  color: #212121 !important;
+}
+
+.bag-count {
+  position: absolute;
+  top: -2px;
+  right: -6px;
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================== USER ICON DROPDOWN ===================== */
+.user-icon-dropdown {
+  position: relative;
+}
+
+/* Desktop hover */
+@media (min-width: 992px) {
+  .user-icon-dropdown .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px) scale(0.95);
+    transition: all 0.25s ease;
+    right: 0;
+    left: auto;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    background-color: #fff;
+    pointer-events: none;
+  }
+
+  .user-icon-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
+  }
+
+  .user-icon-dropdown .dropdown-item {
+    padding: 10px 20px;
+    transition: all 0.2s ease;
+  }
+
+  .user-icon-dropdown .dropdown-item:hover {
+    background-color: #dc3545;
+    color: #fff !important;
+    transform: translate;
+  }
+
+  .user-icon-dropdown .user-icon {
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+  }
+
+  .user-icon-dropdown:hover .user-icon {
+    color: #dc3545;
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile - click default */
+@media (max-width: 991px) {
+  .user-icon-dropdown .dropdown-menu {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 576px) {
+  .logo-image { width: 90px; }
+  .search-form { max-width: 100%; margin-top: 10px; }
+  .flip-nav-link { font-size: 14px; }
+}

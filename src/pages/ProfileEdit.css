@@ -1,0 +1,88 @@
+.profile-edit-page {
+  min-height: 100vh;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.profile-edit-card {
+  width: 95%;
+  max-width: 1100px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* LEFT SIDE */
+.profile-edit-left {
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-edit-avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #fff;
+  margin-bottom: 20px;
+}
+
+.profile-edit-name {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.profile-edit-role {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* RIGHT SIDE */
+.profile-edit-right {
+  padding: 40px 50px;
+  flex: 1;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 8px;
+}
+
+.profile-edit-actions {
+  margin-top: 25px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profile-edit-card {
+    flex-direction: column;
+  }
+
+  .profile-edit-left,
+  .profile-edit-right {
+    padding: 30px;
+  }
+
+  .profile-edit-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-edit-name {
+    font-size: 22px;
+  }
+}
